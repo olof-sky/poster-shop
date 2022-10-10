@@ -1,5 +1,10 @@
-* {
+h1, h2, h3, p {
     word-break: break-word;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -11,7 +16,6 @@ body {
 h1 {
     font-family: Roboto;
     font-size: 6.375rem;
-    font-weight: 700;
     line-height: 7.5rem;
     letter-spacing: 0em;
     margin-top: 3.75rem;
@@ -21,32 +25,23 @@ h1 {
 }
 
 h2 {
-    margin: 1rem 0 0 0;
-    font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: 700;
+    margin-top: 1rem;
     font-size: 2rem;
     line-height: 2.5rem;
     color: #FFFFFF;
 }
 
 h3 {
-    font-family: 'Fira Sans';
-    font-style: normal;
-    margin: 0;
-    font-weight: 700;
     font-size: 12px;
     line-height: 14px;
     color: #FFFFFF;
 }
 
 p {
-    font-family: 'Fira Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.375rem;
-    margin: 1rem 0 0 0;
+    margin-top: 1rem;
     color: #FFFFFF;
 }
 
@@ -76,7 +71,7 @@ main {
   justify-items: center;
 }
 
-.cards-container {
+.small-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3%;
@@ -90,11 +85,6 @@ main {
 .poster-card {
     display: flex;
     flex-direction: column;
-    min-width: 33%;
-}
-
-.poster-text {
-    height: 100%;
 }
 
 .poster-img {
@@ -118,47 +108,32 @@ main {
     height: fit-content;
 }
 
-/* .big-cards-container {
+.big-cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    column-gap: 3%;
     row-gap: 6rem;
     margin-top: 6rem;
     width: 70%;
+    max-width: 1000px;
     height: fit-content;
-  }
-
-.big-poster-card {
-    display: grid;
-    grid-area: auto;
-    background-color: #ffffff;
 }
 
-.big-poster-card-text {
-    padding: 16px;
+.big-cards-container .poster-card {
+  background-color: #FFFFFF;
 }
 
-.big-poster-card p {
-    color: #222222;
+.big-cards-container .poster-text h2, .big-cards-container .poster-text p{
+  color:rgba(34, 34, 34, 1);
 }
 
-.big-poster-card h2 {
-    color: #222222;
+.big-poster-content {
+    padding: 3%;
 }
 
-.big-poster-card h3 {
-    font-size: 0.875rem;
-} */
-
-/* .take-my-money-btn-large {
-    margin: 3rem 0 0 0;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 0.25rem;
-    border: none;
-    background-color: rgba(232, 63, 87, 1);
-    width: fit-content;
-    height: fit-content;
-} */
+.big-cards-container .take-my-money-btn {
+    display: block;
+}
 
 footer {
 
